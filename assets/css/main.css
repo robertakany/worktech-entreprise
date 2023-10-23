@@ -2683,3 +2683,10 @@ section {
 background-color: rgb(23, 211, 99);
  color:black; 
 }
+
+.modif_border{
+
+  border: solid grey 4px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
