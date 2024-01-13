@@ -242,6 +242,20 @@ section {
   }
 }
 
+@media screen and (max-width: 468px){
+  .hidden-name{
+    display: none !important;
+  }
+  .worktech-name{
+    font-size: 24px !important;
+    font-weight: bolder;
+  }
+
+  .entreprise-name{
+    font-size: 24px !important;
+    font-weight:bolder;
+  }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -2689,4 +2703,20 @@ background-color: rgb(23, 211, 99);
   border: solid grey 4px;
   border-radius: 5px;
   margin-bottom: 30px;
+}
+
+.size_1{
+  padding: 80px;
+  list-style-type: none;
+}
+
+.t_Header{
+  font-size: 20px; 
+  color: rgb(246,185,51);
+}
+
+.img-fluid_1{
+  background-image: url(/assets/coup-mise-au-point-peu-profonde-enfant-africain-apprenant-ecole_181624-36498.jpeg);
+  width: 900px;
+  height: 900px;
 }
