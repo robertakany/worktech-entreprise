@@ -2720,3 +2720,10 @@ background-color: rgb(23, 211, 99);
   width: 900px;
   height: 900px;
 }
+.img_event{
+  width: 420px;
+  height: 320px;
+  
+  margin-top: 20px;
+  border-radius: 10px;
+}
