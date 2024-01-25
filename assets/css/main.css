@@ -2590,7 +2590,7 @@ section {
 }
 
 .footer .footer-content .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
 }
 
 .footer .footer-content .footer-info h3 {
@@ -2726,4 +2726,7 @@ background-color: rgb(23, 211, 99);
   
   margin-top: 20px;
   border-radius: 10px;
+}
+.blue-text{
+  color: rgb(245,179,51);
 }
