@@ -27,7 +27,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  
 
   <!-- =======================================================
   * Template Name: UpConstruction
@@ -41,88 +42,42 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1><img src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px;" alt=""></h1>
-      </a>
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Accueil</a></li>
-          <li><a href="about.html" >A propos de nous</a></li>
-          <li><a href="services.html">Nos services</a></li>
-          <li><a href="projects.html">Nos Produits</a></li>
-          
-          <!-- <li><a href="blog.html">Galerie</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg, rgba(252,162,102,1) 0%, rgba(4,119,86,1) 100%);">
+    <div class="container px-5">
+        <a class="navbar-brand" href="#!"><img src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px; width: 150px;" alt=""></a>
+        <!-- Bouton de menu hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="color: rgb(85, 80, 80) !important;">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">A propos de nous</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Nos services</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Nos produits</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
             </ul>
-          </li> -->
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="event.html">Event</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-
-
-  <section id="hero" class="hero">
-
-    <div class="info d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 class="media_modif" data-aos="fade-down"><span><span style="color: green;" class="worktech-name">Soccan</span><span style="color: orange;" class="entreprise-name"> sarl</span><br>
-              <p style="color: rgb(243,164,51); font-size: 18px;">Societé congolaise de conception d'assemblage d'outils numérique </p>
-              <span class="t_Header" style="font-size: 20px;"></span></span></h2>
-            <p data-aos="fade-up">Des solutions innovantes pour un congo plus durable</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="contact.html" class="btn-get-started">Contactez-nous</a>
-          </div>
         </div>
-      </div>
     </div>
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <div class="carousel-item active" style="background-image: url(assets/carousel/3J9A8854.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/carousel/3J9A8856.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/carousel/logo214.JPG)"></div>
-      <div class="carousel-item" style="background-image: url(assets/carousel/aboutus.jpg)"></div>
-    
-
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
+</nav>
+<!-- Header-->
+<header class=" py-5" style="background: linear-gradient(90deg, rgba(4,119,86,1) 0%, rgba(252,162,102,1) 100%)">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center my-5">
+                    <h3 class="display-4 fw-bolder text-white mb-2" style="color: rgba(4,119,86,1) !important;"><img src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px; width: 350px;" alt=""></h3>
+                    <p class="lead text-white-50 mb-4" style="color: #fff !important;">Société Congolaise de Conception d'Assemblage d'Outils Numériques s'engage à propulser le Congo vers un avenir numérique et durable grâce à des solutions innovantes sur mesure. En tant que pionniers de l'industrie, nous façonnons un paysage technologique qui favorise la croissance économique tout en préservant notre environnement. Rejoignez-nous dans notre mission de créer un Congo prospère et durable pour les générations futures.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-outline-light btn-lg px-4" style="background: rgb(243,164,51);" href="contact.html">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-  </section><!-- End Hero Section -->
+</header>
+<!-- End Hero Section -->
 
   <main id="main">
 
@@ -146,8 +101,8 @@
             </div>
           </div>
 
-          <div class="col-lg-5" data-aos="fade">
-           <img style="height: 500px; border-radius: 10px;" src="assets/worktech/aboutus.jpg" alt="apropos">
+          <div class="col-lg-6" data-aos="fade">
+           <img style="height: 450px; border-radius: 10px;" src="assets/abt.jpg" alt="apropos">
           </div><!-- End Quote Form -->
 
         </div>
@@ -159,7 +114,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/worktech/vision.jpg); border-radius: 10px;" data-aos="zoom-in" data-aos-delay="100"></div>
+          <div class="col-lg-6 img-bg" style="background-image: url(assets/images.jpeg); object-fit: cover; border-radius: 10px;" data-aos="zoom-in" data-aos-delay="100"></div>
 
           <div class="col-lg-5 d-flex flex-column justify-content-center">
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
@@ -178,6 +133,14 @@
                 <p>L'honnêteté, le respect, la créativité et la concentration sont la somme de ce que nous sommes pour valoriser ceux qui croient et apprécient notre travail.</p>
               </div>
             </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Mission</a></h4>
+                <p>Chez Soccan, nous nous engageons à être le partenaire de confiance de nos clients, en leur offrant des solutions personnalisées de qualité dans les domaines de l'électricité, de l'électronique, de l'informatique, de la construction et de la sécurité. Guidés par nos valeurs d'honnêteté, de respect, de créativité et de concentration, nous visons à garantir leur réussite grâce à un service professionnel exceptionnel.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -198,24 +161,24 @@
 
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <h4>Wortech-Electric</h4>
+              <h4>Soccan-Electric</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>Wortech-Electronic</h4>
+              <h4>Soccan-Electronic</h4>
             </a><!-- End tab nav item -->
 
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>Wortech-Info and télécom</h4>
+              <h4>Soccan-Info and télécom</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-              <h4>Wortech-Construction</h4>
+              <h4>Soccan-Construction</h4>
             </a>
           </li><!-- End tab nav item -->
 
@@ -226,7 +189,7 @@
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <h3>Wortech-Electric</h3>
+                <h3>Soccan-Electric</h3>
   
                 <ul>
                   <h5>Installation électrique pour les bâtiments résidentiels</h5>
@@ -247,7 +210,7 @@
           <div class="tab-pane" id="tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Wortech-Electronic</h3>
+                <h3>Soccan-Electronic</h3>
                 <ul>
                   <h5>Montage et assemblage de systèmes électroniques.</h5>
                   <li><i class="bi bi-check2-all"></i>Nous offrons des services de montage et d'assemblage pour des projets personnalisés, petits et grands. Nous créons des systèmes électroniques à partir de composants individuels.</li><br>
@@ -266,7 +229,7 @@
           <div class="tab-pane" id="tab-3">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-              <h3>Wortech-Info and télécommunications</h3>
+              <h3>Soccan-Info and télécommunications</h3>
                 <ul>
                   <h5>Formation et assistance technique</h5>
                   <li><i class="bi bi-check2-all"></i> Nous offrons des formations personnalisées et une assistance technique pour les équipements informatiques et les réseaux. Nous sommes là pour vous aider.</li><br>
@@ -289,7 +252,7 @@
           <div class="tab-pane" id="tab-4">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Wortech-Construction</h3>
+                <h3>Soccan-Construction</h3>
                <!--  <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.
@@ -331,8 +294,8 @@
          ></div>
 
          <div class="col-lg-5 d-flex flex-column justify-content-center">
-           <br><br><h2>Worktech Academy</h2>
-           <p>Worktech Academy est entreprise de formation continue,
+           <br><br><h2>Soccan Academy</h2>
+           <p>Soccan Academy est entreprise de formation continue,
             une entreprise qui propose des formations aux adultes, 
             salariés ou non.
              Ces formations peuvent être destinées à l'acquisition de nouvelles compétences,
@@ -418,12 +381,12 @@ La formation continue est un investissement qui permet de développer le capital
           ></div>
 
           <div class="col-lg-7">
-            <h2>Worktech Express</h2>
+            <h2>Soccan Express</h2>
             <div class="our-story" style="border-radius: 10px; background-color: rgb(94,193,152);">
-              <h3 style="color: white;">Worktech Express</h3>
+              <h3 style="color: white;">Soccan Express</h3>
               <br />
               <p>
-                Worktech Express est entreprise de livraison de courrier, 
+                Soccan Express est entreprise de livraison de courrier, 
                 nous nous chargeons de transporter des lettres,
                  des colis et d'autres objets de petite taille d'un point à un autre.
               </p>
@@ -460,15 +423,15 @@ La formation continue est un investissement qui permet de développer le capital
     
      <div class="container-fluid">
       <div class="container">
-        <h3 style="color: rgb(246,185,51); padding-left: 70px;">Soccan sarl</h3>
+        
 
         <div class="row" >
           
           <div class="col-lg-4 col-md-12 col-sm-12 ">
-            <h3 style=" padding-left: 70px;">Worktech Entreprise</h3>
+            <h3 style=" padding-left: 70px;">Soccan sarl</h3>
             <div class="footer-info" style="padding-right: 70px; padding-left: 70px; padding-top: 20px;">
  
-              <p>Worktech Entreprise est une entreprise d'ingénierie spécialisée 
+              <p>Soccan sarl est une entreprise d'ingénierie spécialisée 
                 dans la création d'outils et de services de qualité supérieure pour répondre aux besoins de ses clients.</p>
             </div>
         
@@ -577,6 +540,14 @@ La formation continue est un investissement qui permet de développer le capital
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+  <script>
+    // Script pour fermer le menu au clic d'un élément de menu
+    document.querySelectorAll('.nav-link').forEach(item => {
+        item.addEventListener('click', () => {
+            document.querySelector('.navbar-collapse').classList.remove('show');
+        });
+    });
+</script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
