@@ -61,18 +61,31 @@
         </div>
     </div>
 </nav>
+<style>
+  /* Définir un style pour l'image lorsque la largeur de l'écran est inférieure à 576 pixels (taille d'un téléphone) */
+  @media (max-width: 576px) {
+      #soccan-image {
+          width: 150px; /* ajustez la taille selon vos besoins */
+      }
+  }
+</style>
 <!-- Header-->
 <header class=" py-5" style="background: linear-gradient(90deg, rgba(4,119,86,1) 0%, rgba(252,162,102,1) 100%)">
     <div class="container px-5">
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-8">
-                <div class="text-center my-5">
-                    <h3 class="display-4 fw-bolder text-white mb-2" style="color: rgba(4,119,86,1) !important;"><img src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px; width: 300px; object-fit: cover;" alt=""></h3>
-                    <p class="lead text-white-50 mb-4" style="color: #fff !important;">Société Congolaise de Conception et d'Assemblage d'outils Numériques s'engage à propulser le Congo vers un avenir numérique et durable grâce à des solutions innovantes sur mesure. En tant que pionniers de l'industrie, nous façonnons un paysage technologique qui favorise la croissance économique tout en préservant notre environnement. Rejoignez-nous dans notre mission de créer un Congo prospère et durable pour les générations futures.</p>
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                        <a class="btn btn-outline-light btn-lg px-4" style="background: rgb(243,164,51);" href="contact.html">Contactez-nous</a>
-                    </div>
+              <div class="text-center my-5">
+                <h3 class="display-4 fw-bolder text-white mb-2" style="color: rgba(4,119,86,1) !important;">
+                    <img id="soccan-image" src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px; width: 300px; object-fit: cover;" alt="">
+                </h3>
+                <p class="lead text-white-50 mb-4" style="color: #fff !important;">Société Congolaise de Conception et d'Assemblage d'outils Numériques s'engage à propulser le Congo vers un avenir numérique et durable grâce à des solutions innovantes sur mesure. En tant que pionniers de l'industrie, nous façonnons un paysage technologique qui favorise la croissance économique tout en préservant notre environnement. Rejoignez-nous dans notre mission de créer un Congo prospère et durable pour les générations futures.</p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                    <a class="btn btn-outline-light btn-lg px-4" style="background: rgb(243,164,51);" href="contact.html">Contactez-nous</a>
                 </div>
+            </div>
+            
+            
+            
             </div>
         </div>
     </div>
