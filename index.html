@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,8 +29,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/responsive.css" rel="stylesheet">
-  
+  <link href="assets/css/main.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: UpConstruction
@@ -41,81 +43,126 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg, rgba(252,162,102,1) 0%, rgba(4,119,86,1) 100%);">
-    <div class="container px-5">
-        <a class="navbar-brand" href="#!"><img src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px; width: 150px;" alt=""></a>
-        <!-- Bouton de menu hamburger -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="color: rgb(85, 80, 80) !important;">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">A propos de nous</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Nos services</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Nos produits</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
-            </ul>
-        </div>
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1><img src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px;" alt=""></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="about.html">A propos de nous</a></li>
+          <li><a href="services.html">Nos services</a></li>
+          <li><a href="projects.html">Nos Produits</a></li>
+
+          <!-- <li><a href="blog.html">Galerie</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li> -->
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="event.html">Event</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
     </div>
-</nav>
-<style>
-  /* Définir un style pour l'image lorsque la largeur de l'écran est inférieure à 576 pixels (taille d'un téléphone) */
-  @media (max-width: 576px) {
-      #soccan-image {
-          width: 150px; /* ajustez la taille selon vos besoins */
-      }
-  }
-</style>
-<!-- Header-->
-<header class=" py-5" style="background: linear-gradient(90deg, rgba(4,119,86,1) 0%, rgba(252,162,102,1) 100%)">
-    <div class="container px-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-8">
-              <div class="text-center my-5">
-                <h3 class="display-4 fw-bolder text-white mb-2" style="color: rgba(4,119,86,1) !important;">
-                    <img id="soccan-image" src="/assets/LOGOS/Soccan.jpeg" style="border-radius: 10px; width: 300px; object-fit: cover;" alt="">
-                </h3>
-                <p class="lead text-white-50 mb-4" style="color: #fff !important;">Société Congolaise de Conception et d'Assemblage d'outils Numériques s'engage à propulser le Congo vers un avenir numérique et durable grâce à des solutions innovantes sur mesure. En tant que pionniers de l'industrie, nous façonnons un paysage technologique qui favorise la croissance économique tout en préservant notre environnement. Rejoignez-nous dans notre mission de créer un Congo prospère et durable pour les générations futures.</p>
-                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                    <a class="btn btn-outline-light btn-lg px-4" style="background: rgb(243,164,51);" href="contact.html">Contactez-nous</a>
-                </div>
-            </div>
-            
-            
-            
-            </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+
+
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="media_modif" data-aos="fade-down"><span><span style="color: green;"
+                  class="worktech-name">Soccan</span><span style="color: orange;" class="entreprise-name">
+                  sarl</span><br>
+                <p style="color: rgb(243,164,51); font-size: 18px;">Societé congolaise de conception d'assemblage
+                  d'outils
+                  numérique </p>
+                <span class="t_Header" style="font-size: 20px;"></span>
+              </span></h2>
+            <p data-aos="fade-up">Des solutions innovantes pour un congo plus durable</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="contact.html" class="btn-get-started">Contactez-nous</a>
+          </div>
         </div>
+      </div>
     </div>
-</header>
-<!-- End Hero Section -->
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active"
+        style="background-image: url(assets/pngtree-green-slash-background-with-orange-tip-image_1467942.jpg)"></div>
+
+
+
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <!-- End Hero Section -->
 
   <main id="main">
 
     <!-- ======= Get Started Section ======= -->
-    <section  id="get-started" class="get-started section-bg">
+    <section id="get-started" class="get-started section-bg">
       <div class="container">
 
         <div class="row justify-content-between gy-4">
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
             <div class="content">
-              <h3>A propos de nous  </h3>
-                <p style="font-weight: 900; font-seize: 30px;">Nous sommes Soccan, une entreprise qui fournit des solutions personnalisées pour aider nos clients à réussir.
-                   Nous avons une expertise dans plusieurs domaines, notamment l'installation électrique pour les bâtiments résidentiels
-                    et commerciaux, la conception et l'assemblage de systèmes électroniques, la formation et l'assistance technique 
-                    pour les équipements informatiques et les réseaux, la conception et la construction de bâtiments résidentiels
-                     et commerciaux, ainsi que l'installation et la réparation de systèmes de vidéosurveillance. Nous offrons des
-                      services professionnels pour répondre aux besoins spécifiques de nos clients et nous sommes engagés dans leur
-                       réussite.</p>
-              
+              <h3>A propos de nous </h3>
+              <p style="font-weight: 900; font-seize: 30px;">Nous sommes Soccan, une entreprise qui fournit des
+                solutions personnalisées pour aider nos clients à réussir.
+                Nous avons une expertise dans plusieurs domaines, notamment l'installation électrique pour les bâtiments
+                résidentiels
+                et commerciaux, la conception et l'assemblage de systèmes électroniques, la formation et l'assistance
+                technique
+                pour les équipements informatiques et les réseaux, la conception et la construction de bâtiments
+                résidentiels
+                et commerciaux, ainsi que l'installation et la réparation de systèmes de vidéosurveillance. Nous offrons
+                des
+                services professionnels pour répondre aux besoins spécifiques de nos clients et nous sommes engagés dans
+                leur
+                réussite.</p>
+
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade">
-           <img style="height: 450px; border-radius: 10px;" src="assets/abt.jpg" alt="apropos">
+            <img style="height: 450px; border-radius: 10px;" src="assets/abt.jpg" alt="apropos">
           </div><!-- End Quote Form -->
 
         </div>
@@ -123,18 +170,22 @@
       </div>
     </section><!-- End Get Started Section -->
 
-    <section style="background-color:rgb(6, 192, 151); color:aliceblue; border-radius: 10px 10px 0px 0px ;" id="alt-services" class="alt-services">
+    <section style="background-color:rgb(6, 192, 151); color:aliceblue; border-radius: 10px 10px 0px 0px ;"
+      id="alt-services" class="alt-services">
       <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/images.jpeg); object-fit: cover; border-radius: 10px;" data-aos="zoom-in" data-aos-delay="100"></div>
+          <div class="col-lg-6 img-bg"
+            style="background-image: url(assets/images.jpeg); object-fit: cover; border-radius: 10px;"
+            data-aos="zoom-in" data-aos-delay="100"></div>
 
           <div class="col-lg-5 d-flex flex-column justify-content-center">
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-brightness-high flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Vision</a></h4>
-                <p>Notre vision est d'être le partenaire privilégié de nos clients pour leurs projets, en offrant des services de qualité supérieure et en s'engageant à leur réussite.</p>
+                <p>Notre vision est d'être le partenaire privilégié de nos clients pour leurs projets, en offrant des
+                  services de qualité supérieure et en s'engageant à leur réussite.</p>
               </div>
             </div><!-- End Icon Box -->
 
@@ -143,7 +194,8 @@
               <i class="bi bi-patch-check flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Valeurs</a></h4>
-                <p>L'honnêteté, le respect, la créativité et la concentration sont la somme de ce que nous sommes pour valoriser ceux qui croient et apprécient notre travail.</p>
+                <p>L'honnêteté, le respect, la créativité et la concentration sont la somme de ce que nous sommes pour
+                  valoriser ceux qui croient et apprécient notre travail.</p>
               </div>
             </div><!-- End Icon Box -->
 
@@ -151,7 +203,11 @@
               <i class="bi bi-patch-check flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Mission</a></h4>
-                <p>Chez Soccan, nous nous engageons à être le partenaire de confiance de nos clients, en leur offrant des solutions personnalisées de qualité dans les domaines de l'électricité, de l'électronique, de l'informatique, de la construction et de la sécurité. Guidés par nos valeurs d'honnêteté, de respect, de créativité et de concentration, nous visons à garantir leur réussite grâce à un service professionnel exceptionnel.</p>
+                <p>Chez Soccan, nous nous engageons à être le partenaire de confiance de nos clients, en leur offrant
+                  des solutions personnalisées de qualité dans les domaines de l'électricité, de l'électronique, de
+                  l'informatique, de la construction et de la sécurité. Guidés par nos valeurs d'honnêteté, de respect,
+                  de créativité et de concentration, nous visons à garantir leur réussite grâce à un service
+                  professionnel exceptionnel.</p>
               </div>
             </div>
           </div>
@@ -167,7 +223,8 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>CE QUE NOUS FAISONS</h2>
-          <p>Nous mettons notre expertise à votre disposition pour vous aider à réussir en créant des solutions personnalisées qui répondent à vos besoins spécifiques.</p>
+          <p>Nous mettons notre expertise à votre disposition pour vous aider à réussir en créant des solutions
+            personnalisées qui répondent à vos besoins spécifiques.</p>
         </div>
 
         <ul class="nav nav-tabs row  g-2 d-flex">
@@ -201,23 +258,31 @@
 
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                data-aos="fade-up" data-aos-delay="100">
                 <h3>Soccan-Electric</h3>
-  
+
                 <ul>
                   <h5>Installation électrique pour les bâtiments résidentiels</h5>
-                  <li><i class="bi bi-check2-all"></i> Nous installons des systèmes électriques pour les maisons individuelles et les appartements. Nous offrons une expertise pour les projets neufs et la mise à niveau des systèmes existants.</li><br>
-                 <h5>Installation électrique pour les bâtiments commerciaux</h5>
-                  <li><i class="bi bi-check2-all"></i> Nous installons des systèmes électriques pour les entreprises et les bâtiments commerciaux. Nous offrons une expertise pour les projets neufs et la mise à niveau des systèmes existants.</li><br>
+                  <li><i class="bi bi-check2-all"></i> Nous installons des systèmes électriques pour les maisons
+                    individuelles et les appartements. Nous offrons une expertise pour les projets neufs et la mise à
+                    niveau des systèmes existants.</li><br>
+                  <h5>Installation électrique pour les bâtiments commerciaux</h5>
+                  <li><i class="bi bi-check2-all"></i> Nous installons des systèmes électriques pour les entreprises et
+                    les bâtiments commerciaux. Nous offrons une expertise pour les projets neufs et la mise à niveau des
+                    systèmes existants.</li><br>
                   <h5>Maintenance et réparation de systèmes électriques</h5>
-                  <li><i class="bi bi-check2-all"></i> Nous offrons des services de maintenance, de dépannage et de réparation pour les systèmes électriques résidentiels et commerciaux. Nous veillons à la conformité aux normes de sécurité et à la performance optimale</li>
+                  <li><i class="bi bi-check2-all"></i> Nous offrons des services de maintenance, de dépannage et de
+                    réparation pour les systèmes électriques résidentiels et commerciaux. Nous veillons à la conformité
+                    aux normes de sécurité et à la performance optimale</li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img style="height: 521px; width: 600px; border-radius: 10px;" src="assets/img/images1/elect.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                <img style="height: 521px; width: 600px; border-radius: 10px;" src="assets/img/images1/elect.jpg" alt=""
+                  class="img-fluid" style="border-radius: 10px;">
               </div>
             </div>
-            
+
           </div><!-- End tab content item -->
 
           <div class="tab-pane" id="tab-2">
@@ -226,15 +291,20 @@
                 <h3>Soccan-Electronic</h3>
                 <ul>
                   <h5>Montage et assemblage de systèmes électroniques.</h5>
-                  <li><i class="bi bi-check2-all"></i>Nous offrons des services de montage et d'assemblage pour des projets personnalisés, petits et grands. Nous créons des systèmes électroniques à partir de composants individuels.</li><br>
+                  <li><i class="bi bi-check2-all"></i>Nous offrons des services de montage et d'assemblage pour des
+                    projets personnalisés, petits et grands. Nous créons des systèmes électroniques à partir de
+                    composants individuels.</li><br>
                   <h5>Conception de circuits électroniques.</h5>
-                  <li><i class="bi bi-check2-all"></i>Nous concevons des circuits électroniques pour des produits grand public, industriels ou médicaux. Des solutions sur mesure pour répondre à vos besoins. </li><br>
+                  <li><i class="bi bi-check2-all"></i>Nous concevons des circuits électroniques pour des produits grand
+                    public, industriels ou médicaux. Des solutions sur mesure pour répondre à vos besoins. </li><br>
                   <h5>Réparation de matériel électronique.</h5>
-                  <li><i class="bi bi-check2-all"></i>Nous offrons des services de réparation pour des produits grand public, industriels, médicaux et autres. Nous réparons votre matériel électronique défectueux.</li>
+                  <li><i class="bi bi-check2-all"></i>Nous offrons des services de réparation pour des produits grand
+                    public, industriels, médicaux et autres. Nous réparons votre matériel électronique défectueux.</li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img style="height: 521px; width: 600px;border-radius: 10px;"  src="assets/img/images1/electronique.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                <img style="height: 521px; width: 600px;border-radius: 10px;" src="assets/img/images1/electronique.jpg"
+                  alt="" class="img-fluid" style="border-radius: 10px;">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -242,14 +312,20 @@
           <div class="tab-pane" id="tab-3">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-              <h3>Soccan-Info and télécommunications</h3>
+                <h3>Soccan-Info and télécommunications</h3>
                 <ul>
                   <h5>Formation et assistance technique</h5>
-                  <li><i class="bi bi-check2-all"></i> Nous offrons des formations personnalisées et une assistance technique pour les équipements informatiques et les réseaux. Nous sommes là pour vous aider.</li><br>
+                  <li><i class="bi bi-check2-all"></i> Nous offrons des formations personnalisées et une assistance
+                    technique pour les équipements informatiques et les réseaux. Nous sommes là pour vous aider.</li>
+                  <br>
                   <h5>Vente de matériels informatiques</h5>
-                  <li><i class="bi bi-check2-all"></i>Nous vendons des ordinateurs, des serveurs, des imprimantes, des scanners, etc. Nous offrons une gamme de produits et de marques pour répondre à vos besoins.</li><br>
+                  <li><i class="bi bi-check2-all"></i>Nous vendons des ordinateurs, des serveurs, des imprimantes, des
+                    scanners, etc. Nous offrons une gamme de produits et de marques pour répondre à vos besoins.</li>
+                  <br>
                   <h5>Installation et maintenance de réseaux informatiques</h5>
-                  <li><i class="bi bi-check2-all"></i> Nous installons et entretenons des réseaux informatiques pour les entreprises. Nous offrons des services pour la conception, l'installation et la maintenance des réseaux.</li>
+                  <li><i class="bi bi-check2-all"></i> Nous installons et entretenons des réseaux informatiques pour les
+                    entreprises. Nous offrons des services pour la conception, l'installation et la maintenance des
+                    réseaux.</li>
                 </ul>
                 <!-- <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -266,21 +342,28 @@
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                 <h3>Soccan-Construction</h3>
-               <!--  <p class="fst-italic">
+                <!--  <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.
                 </p> -->
                 <ul>
                   <h5>Conception et construction de bâtiments résidentiels et commerciaux.</h5>
-                  <li><i class="bi bi-check2-all"></i> Nous concevons et construisons des maisons personnalisées pour répondre aux besoins de nos clients. Des designs modernes.</li><br>
+                  <li><i class="bi bi-check2-all"></i> Nous concevons et construisons des maisons personnalisées pour
+                    répondre aux besoins de nos clients. Des designs modernes.</li><br>
                   <h5>Gestion de projets de construction.</h5>
-                  <li><i class="bi bi-check2-all"></i> Nous assurons la gestion de projets de construction pour respecter les délais et budgets impartis. Nous travaillons en étroite collaboration avec les clients.</li><br>
+                  <li><i class="bi bi-check2-all"></i> Nous assurons la gestion de projets de construction pour
+                    respecter les délais et budgets impartis. Nous travaillons en étroite collaboration avec les
+                    clients.</li><br>
                   <h5>Rénovation et réhabilitation de bâtiments existants.</h5>
-                  <li><i class="bi bi-check2-all"></i>Nous rénovons des bâtiments existants pour améliorer leur efficacité énergétique, leur aspect esthétique et leur fonctionnalité. Nous sommes spécialisés dans la restauration de bâtiments historiques.</li>
+                  <li><i class="bi bi-check2-all"></i>Nous rénovons des bâtiments existants pour améliorer leur
+                    efficacité énergétique, leur aspect esthétique et leur fonctionnalité. Nous sommes spécialisés dans
+                    la restauration de bâtiments historiques.</li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/worktech/travailleur-afro-americain-debout-uniforme-portant-casque-securite-dans-usine.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                <img
+                  src="assets/worktech/travailleur-afro-americain-debout-uniforme-portant-casque-securite-dans-usine.jpg"
+                  alt="" class="img-fluid" style="border-radius: 10px;">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -290,29 +373,23 @@
       </div>
     </section><!-- End Features Section -->
 
-   
-     <!-- ======= Alt Services Section ======= -->
-     <section
-     style="background-color: rgba(227, 227, 227, 0.411)"
-     id="alt-services"
-     class="alt-services"
-   >
-     <div class="container" data-aos="fade-up">
-       <div class="row justify-content-around gy-4">
-         <div
-           class="col-lg-6 img-bg"
-           style="background-image: url(assets/etudiant-positif-peau-foncee-porte-dossiers-livre-pointe-expression-joyeuse-cote-sourire-pleines-dents.jpg); background-position-x: -100px; background-size: cover; background-repeat: no-repeat; border-radius: 15px;"
-           data-aos="zoom-in"
-           data-aos-delay="100"
-         ></div>
 
-         <div class="col-lg-5 d-flex flex-column justify-content-center">
-           <br><br><h2>Soccan Academy</h2>
-           <p>Soccan Academy est entreprise de formation continue,
-            une entreprise qui propose des formations aux adultes, 
-            salariés ou non.
-             Ces formations peuvent être destinées à l'acquisition de nouvelles compétences,
-            au perfectionnement de compétences existantes ou à l'adaptation aux évolutions du marché du travail.</p>
+    <!-- ======= Alt Services Section ======= -->
+    <section style="background-color: rgba(227, 227, 227, 0.411)" id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg"
+            style="background-image: url(assets/etudiant-positif-peau-foncee-porte-dossiers-livre-pointe-expression-joyeuse-cote-sourire-pleines-dents.jpg); background-position-x: -100px; background-size: cover; background-repeat: no-repeat; border-radius: 15px;"
+            data-aos="zoom-in" data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <br><br>
+            <h2>Soccan Academy</h2>
+            <p>Soccan Academy est entreprise de formation continue,
+              une entreprise qui propose des formations aux adultes,
+              salariés ou non.
+              Ces formations peuvent être destinées à l'acquisition de nouvelles compétences,
+              au perfectionnement de compétences existantes ou à l'adaptation aux évolutions du marché du travail.</p>
 
             <h5>Soccan Academy propose des formations dans tous les domaines, tels que :</h5>
 
@@ -353,45 +430,44 @@
                 <span>Permettre aux individus de développer leurs compétences et de se perfectionner</span>
               </li>
               <li>
-                <i class="bi bi-check-circle"  style="color: goldenrod;"></i>
+                <i class="bi bi-check-circle" style="color: goldenrod;"></i>
                 <span>Répondre aux besoins des entreprises en matière de formation professionnelle</span>
               </li>
               <li>
-              <i class="bi bi-check-circle" style="color: goldenrod;" ></i>
+                <i class="bi bi-check-circle" style="color: goldenrod;"></i>
                 <span>Contribuer à l'employabilité des salariés</span>
               </li>
             </ul>
             <h5>L'importance de la formation continue</h5>
             <p>
-              La formation continue est essentielle pour les individus et les entreprises. Pour les individus, elle permet de développer leurs compétences, de se perfectionner et de progresser dans leur carrière. Pour les entreprises, elle permet de répondre aux besoins des salariés, de maintenir la compétitivité et d'améliorer la productivité.
-La formation continue est un investissement qui permet de développer le capital humain et de favoriser la croissance économique.
+              La formation continue est essentielle pour les individus et les entreprises. Pour les individus, elle
+              permet de développer leurs compétences, de se perfectionner et de progresser dans leur carrière. Pour les
+              entreprises, elle permet de répondre aux besoins des salariés, de maintenir la compétitivité et
+              d'améliorer la productivité.
+              La formation continue est un investissement qui permet de développer le capital humain et de favoriser la
+              croissance économique.
             </p>
 
-           
 
 
-           <div
-             class="icon-box d-flex position-relative"
-             data-aos="fade-up"
-             data-aos-delay="300"
-           >
-            
-           </div>
-           <!-- End Icon Box -->
-         </div>
-       </div>
-     </div>
-   </section>
-   <!-- End Alt Services Section -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+
+            </div>
+            <!-- End Icon Box -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Alt Services Section -->
 
 
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="row position-relative">
-          <div
-            class="col-lg-7 about-img"
-            style="background-image: url(assets/illustration-concept-emails_114360-1355.jpeg); object-fit: cover; border-radius: 10px; border: grey solid 1px;"
-          ></div>
+          <div class="col-lg-7 about-img"
+            style="background-image: url(assets/illustration-concept-emails_114360-1355.jpeg); object-fit: cover; border-radius: 10px; border: grey solid 1px;">
+          </div>
 
           <div class="col-lg-7">
             <h2>Soccan Express</h2>
@@ -399,33 +475,35 @@ La formation continue est un investissement qui permet de développer le capital
               <h3 style="color: white;">Soccan Express</h3>
               <br />
               <p>
-                Soccan Express est entreprise de livraison de courrier, 
+                Soccan Express est entreprise de livraison de courrier,
                 nous nous chargeons de transporter des lettres,
-                 des colis et d'autres objets de petite taille d'un point à un autre.
+                des colis et d'autres objets de petite taille d'un point à un autre.
               </p>
               <h4 style="color: white;">Nos services </h4>
               <ul>
                 <li>
                   <i class="bi bi-check-circle"></i>
-                  <span> La livraison du courrier standard : ce type de livraison est le plus courant et il est généralement effectué dans les deux à trois jours ouvrables.</span>
+                  <span> La livraison du courrier standard : ce type de livraison est le plus courant et il est
+                    généralement effectué dans les deux à trois jours ouvrables.</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle"></i>
-                  <span> La livraison express : ce type de livraison est le plus rapide que la livraison standard et il est généralement effectué dans les 24 heures.</span>
+                  <span> La livraison express : ce type de livraison est le plus rapide que la livraison standard et il
+                    est généralement effectué dans les 24 heures.</span>
                 </li>
-              
+
               </ul>
-            
+
               <br />
               <p>`
-                
-              </div>
+
             </div>
           </div>
         </div>
       </div>
+      </div>
     </section>
-    
+
 
   </main><!-- End #main -->
 
@@ -433,134 +511,145 @@ La formation continue est un investissement qui permet de développer le capital
   <footer id="footer" class="footer">
 
     <div class="footer-content position-relative">
-    
-     <div class="container-fluid">
-      <div class="container">
-        
 
-        <div class="row" >
-          
-          <div class="col-lg-4 col-md-12 col-sm-12 ">
-            <h3 style=" padding-left: 70px;">Soccan sarl</h3>
-            <div class="footer-info" style="padding-right: 70px; padding-left: 70px; padding-top: 20px;">
- 
-              <p>Soccan sarl est une entreprise d'ingénierie spécialisée 
-                dans la création d'outils et de services de qualité supérieure pour répondre aux besoins de ses clients.</p>
-            </div>
-        
+      <div class="container-fluid">
+        <div class="container">
+
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+              <h3 style=" padding-left: 70px;">Soccan sarl</h3>
+              <div class="footer-info" style="padding-right: 70px; padding-left: 70px; padding-top: 20px;">
+
+                <p>Soccan sarl est une entreprise d'ingénierie spécialisée
+                  dans la création d'outils et de services de qualité supérieure pour répondre aux besoins de ses
+                  clients.</p>
+              </div>
+
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
               <div style="padding-right: 70px; padding-left: 70px; padding-top: 20px;">
                 <p>
-                  N°1 Avenue de l'OUA, concession PROCOKI,<br> Commune de la Ngaliema, Kinshasa <br> République Démocratique du Congo<br>
+                  N°1 Avenue de l'OUA, concession PROCOKI,<br> Commune de la Ngaliema, Kinshasa <br> République
+                  Démocratique du Congo<br>
                   <strong>Phone:</strong> (+243) 89 443 4903 ,83 038 6751<br />
                   <strong>Email:</strong> contact@worktech-entreprise.com<br>
                 </p><br>
                 <h6>suivez-nous sur:</h6>
-               <div class="social-links d-flex mt-3" style="align-items: center;">
-                  <a href="https://twitter.com/Rodrigue1110?t=mQ6gPwR1kAyjZk72YvC5Tw&s=08" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                  <a href="https://web.facebook.com/profile.php?id=100063923026863" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/worktechentr/" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/worktech-entreprise/?originalSubdomain=cd" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                <div class="social-links d-flex mt-3" style="align-items: center;">
+                  <a href="https://twitter.com/Rodrigue1110?t=mQ6gPwR1kAyjZk72YvC5Tw&s=08"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                  <a href="https://web.facebook.com/profile.php?id=100063923026863"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/worktechentr/"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/company/worktech-entreprise/?originalSubdomain=cd"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 ">
-           <div class="footer-links" style="padding-right: 70px; padding-left: 70px; padding-top: 20px;">
-            <h4>Differents Liens</h4>
-            <ul>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="about.html">A propos</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-           </div>
-          </div><!-- End footer links column-->
-           
-       </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+              <div class="footer-links" style="padding-right: 70px; padding-left: 70px; padding-top: 20px;">
+                <h4>Differents Liens</h4>
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="about.html">A propos</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="#">Terms of service</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+            </div><!-- End footer links column-->
 
-      </div><!-- End footer info column-->
+          </div>
 
-     </div>
-   </div>
-    
+        </div><!-- End footer info column-->
+
+      </div>
+    </div>
+
   </footer>
 
   <div class="container-fluid" style="background-color: rgb(27, 32, 39);">
 
-  <div class="grey darken-4" style="padding: 20px; color: silver;">
-    <div>
+    <div class="grey darken-4" style="padding: 20px; color: silver;">
+      <div>
         <style>
-            .lax-logo {
-                margin-right: 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 2px;
+          .lax-logo {
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2px;
+          }
+
+          .lax-logo span {
+            display: inline-block;
+            width: 50px;
+            background-color: #0000003b;
+            border-radius: 50%;
+            height: 20px;
+          }
+
+          .lax-logo img {
+            display: inline-block;
+            margin-bottom: -15px;
+            animation: rotate 10s infinite 0s linear;
+          }
+
+          .lax-logo:hover img {
+            animation: none;
+            transform: scale(1.2);
+            filter: contrast(200%);
+          }
+
+          @keyframes rotate {
+            from {
+              transform: rotateZ(0deg);
             }
-            
-            .lax-logo span {
-                display: inline-block;
-                width: 50px;
-                background-color: #0000003b;
-                border-radius: 50%;
-                height: 20px;
+
+            to {
+              transform: rotateZ(360deg);
             }
-            
-            .lax-logo img {
-                display: inline-block;
-                margin-bottom: -15px;
-                animation: rotate 10s infinite 0s linear;
-            }
-            
-            .lax-logo:hover img {
-                animation: none;
-                transform: scale(1.2);
-                filter: contrast(200%);
-            }
-            
-            @keyframes rotate {
-                from {
-                    transform: rotateZ(0deg);
-                }
-                to {
-                    transform: rotateZ(360deg);
-                }
-            }
+          }
         </style>
         <div class="div" style=" display: flex; justify-content: center; width: 100%; ">
-            <div style="padding: 0px 0; display: flex; align-items: center;">
-                <div>
-                    <a class="lax-logo" href="https://laxtech.pro">
-                        <img src="assets/val/icone 1L.png" width="50" style="border-radius: 100px;" alt="Lax Technologies logo">
-                        <span></span>
-                    </a>
-                </div>
-                <div>
-                    <h2 style="font-size: 14px; line-height: 100%; margin: 0; color: aliceblue;"><a style="color: #3475BA; text-align: center;" href="https://laxtech.pro">By Lax technologies S.A.S</a></h2>
-                    <sub style="color: silver;">Leader de le Tech <i class="bi bi-heart-fill secondary-text-color" aria-hidden="true"></i> en Afrique</sub>
-                </div>
+          <div style="padding: 0px 0; display: flex; align-items: center;">
+            <div>
+              <a class="lax-logo" href="https://laxtech.pro">
+                <img src="assets/val/icone 1L.png" width="50" style="border-radius: 100px;" alt="Lax Technologies logo">
+                <span></span>
+              </a>
             </div>
+            <div>
+              <h2 style="font-size: 14px; line-height: 100%; margin: 0; color: aliceblue;"><a
+                  style="color: #3475BA; text-align: center;" href="https://laxtech.pro">By Lax technologies S.A.S</a>
+              </h2>
+              <sub style="color: silver;">Leader de le Tech <i class="bi bi-heart-fill secondary-text-color"
+                  aria-hidden="true"></i> en Afrique</sub>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-  <!-- End Footer -->
+    <!-- End Footer -->
 
   </div>
 
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
   <script>
     // Script pour fermer le menu au clic d'un élément de menu
     document.querySelectorAll('.nav-link').forEach(item => {
-        item.addEventListener('click', () => {
-            document.querySelector('.navbar-collapse').classList.remove('show');
-        });
+      item.addEventListener('click', () => {
+        document.querySelector('.navbar-collapse').classList.remove('show');
+      });
     });
-</script>
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
